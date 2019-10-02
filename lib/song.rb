@@ -36,17 +36,7 @@ class Song
     genre_hash = Hash.new(0)
     
       @@genres.each do |genre|
-        counter = 0
-          if !genre_hash.include?(genre)
-            genre_hash[genre] << 1
-          else 
-            genre_hash[genre] 
-          genre_map << genre 
-        
-       
-      
-    
-    
+         genre_hash[genre] += 1
       end
       genre_hash
     end 
